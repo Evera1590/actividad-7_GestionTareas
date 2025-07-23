@@ -1,0 +1,32 @@
+### Obtener todos los usuarios
+GET http://localhost:5002/api/v1/usuarios
+
+### Obtener un usuario por ID
+GET http://localhost:5002/api/v1/usuarios
+
+### Crear nuevo usuario
+POST http://localhost:5002/api/v1/usuarios 
+Content-Type: application/json
+
+{
+  "nombres": "Julio",
+  "apellidos": "Pérez",
+  "correo": "juan.perez@gmail.com",
+  "contrasena": "1234pass",
+  "rol": "admin"
+}
+
+### Actualizar usuario por ID
+PUT http://localhost:5002/api/v1/usuarios
+Content-Type: application/json
+
+{
+  "nombres": "Laura ",
+  "apellidos": "Gonzales",
+  "correo": "mendoza@gmail.com",
+  "contrasena": "we12d.rfdsss",
+  "rol": "admi"
+}
+
+### Eliminar usuario por ID
+DELETE http://localhost:5002/api/v1/usuarios/19
